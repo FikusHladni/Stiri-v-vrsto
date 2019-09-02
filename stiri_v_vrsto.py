@@ -60,11 +60,6 @@ class Igra():
         if stevec < 6:
             matrika[stevec][n] = ((self.stevec) % 2 + 1)
             self.stevec += 1
-        # if krog % 2 == 1:
-        #     barva = "O"
-        # else:
-        #     barva = "R"
-        # platno.create_oval(2 + 90*n , 2 + 90 * (5-stevec), 92+ 90*n, 92 + 90 * (5-stevec), fill = barva)
         if self.ali_je_stiri_v_vrsto() == True:
             if self.stevec % 2 == 0:
                 self.stanje = ZMAGA_PLAVI
@@ -76,16 +71,12 @@ class Igra():
             self.stanje = IZENACENO
             return IZENACENO
         self.stanje = NAPREJ
-        #  platno.create_text(321,272,font = "Arial 27", activefill="orange",fill="black",text="It's a Draw,click Restart to play again!")
         return NAPREJ   
     def nova_igra(self):
         self.stanje = ZACETEK
         self.stevec = 0
         self.matrika = [[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0]]
         
-    #print(krog)
-    #print(matrika)
-    #print(stevec)
 
 
 
