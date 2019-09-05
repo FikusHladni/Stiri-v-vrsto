@@ -1,7 +1,7 @@
 %rebase("base.html")
   %import stiri_v_vrsto
 <table >
-	<tbody>
+<tbody>
     %for i in range(6):
         <tr>
             %for j in range(7):
@@ -23,8 +23,7 @@
 			<td> <form action="/{{i}}/" method= "post"><button type="submit">{{j}}</button></form> </td>
 	%end
 	</tr>
-      
-	</tbody>
+</tbody>
 </table>
 %if Igra.stanje == stiri_v_vrsto.ZMAGA_PLAVI:
   <h1>Bravo Plavi!</h1>
