@@ -48,35 +48,6 @@ def vstavljanje7():
 def nova():
     Igra.nova_igra()
     return bottle.template("template.tpl" , Igra = Igra)
+         
     
-    
-    
-
-# @bottle.get("/igra/")
-# def test_index():
-#     return bottle.template('igra.html',id_igra = id, ,stanje = stanje)
-
-
-
-
-
-    
-    
-
-# @bottle.post("/nova_igra/")
-# def ugibaj_2 ():
-#     id_igre = int(bottle.request.get_cookie("id_igre"))
-#     crka = bottle.request.forms.getunicode("crka")
-#     vislice.ugibaj(id_igre,crka)
-#     bottle.redirect("/igra/")
-
-# @bottle.post("/igra/<id_igre:int>/")
-# def ugibaj (id_igre):
-#     crka = bottle.request.forms.getunicode("crka")
-#     vislice.ugibaj(id_igre,crka)
-#     bottle.redirect("/igra/{0}/".format(id_igre))
-    
-
-    
-
 bottle.run(reloader=True , debug=True)
